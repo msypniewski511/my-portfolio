@@ -1,188 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <title>Maciej</title>
-</head>
-<body>
-  <!-- Main Header Section -->
-  <header class="banner">
-    <a href="#" style="display: inline;">
-      <img src="./images/default.png" alt="photo" style="width: 200px;">
-    </a>
-    <div class="subheader" style="display: inline;">
-      <h1 style="display: inline;">My Name</h1>
-      <h3 style="display: inline;">Experienced Full Stack Web Developer</h3>
-    </div>
-    <!-- Main Navigation -->
-    <nav class="navbar" style="display: inline;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Maciej</title>
+  </head>
+  <body>
+    <!-- Main Header Section -->
+    <header class="banner">
+      <!-- Main Navigation -->
+      <nav class="navbar">
+        <span class="logo">
+          <ion-icon name="logo-codepen"></ion-icon>
+          Maciej
+        </span>
+        <ul class="main-nav">
+          <li>
+            <a href="#home">About Me</a>
+          </li>
+          <li>
+            <a href="#resume">Resume</a>
+          </li>
+          <li>
+            <a href="#work">Work</a>
+          </li>
+          <li>
+            <a href="#contact"> Contact </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="subheader">
+        <div class="hero-section">
+          <h1>Maciej Sypniewski</h1>
+          <h3>Experienced Full Stack Web Developer</h3>
+          <a href="#contact" class="btn btn-action">Calm action</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Section of Site -->
+    <main class="main">
+      <!-- About Section -->
+      <section id="home" class="container">
+        <header class="subheader">
+          <h2>About Me</h2>
+        </header>
+        <nav class="subnavbar">
+          <a href="#">Cover Letter</a>
+          <a href="#">Skills</a>
+        </nav>
+        <article>
+          <h3>Cover Letter</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quaerat
+            officiis magni consequuntur, molestias illum ipsam corporis earum
+            itaque soluta eum, corrupti ea cumque ipsum sequi maxime quia
+            incidunt et placeat! Minima eligendi delectus accusantium nostrum.
+            Numquam sit commodi tenetur, voluptatum reprehenderit molestias
+            provident, eum sunt modi, doloremque quod. Corporis.
+          </p>
+        </article>
+        <article>
+          <h3>Skils</h3>
+          <div class="skils-progress">
+            <label for="html">HTML</label>
+            <progress
+              id="html"
+              max="100"
+              value="50"
+              style="display: block; width: 100%"
+            >
+              100
+            </progress>
+            <label for="css">CSS</label>
+            <progress
+              id="css"
+              max="50"
+              value="100"
+              style="display: block; width: 100%"
+            >
+              100
+            </progress>
+            <label for="javascript">javascript</label>
+            <progress
+              id="javascript"
+              max="100"
+              value="70"
+              style="display: block; width: 100%"
+            >
+              70
+            </progress>
+            <label for="python">Python</label>
+            <progress
+              id="python"
+              max="100"
+              value="80"
+              style="display: block; width: 100%"
+            >
+              80
+            </progress>
+          </div>
+        </article>
+      </section>
+
+      <!-- Resume Section -->
+      <section id="resume">
+        <header class="subheader">
+          <h2>My Resume</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+            labore recusandae, beatae repellat at quae! Repellendus magni
+            laboriosam omnis ratione unde voluptates ex, culpa modi quidem
+            officiis eligendi consectetur. Omnis.
+          </p>
+          <h3>Where I Have Worked</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eveniet?
+          </p>
+        </header>
+        <div id="experince">
+          <section class="card">
+            <header>
+              <h3>Devmaset</h3>
+            </header>
+            <main>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusantium, unde.
+              </p>
+              <p>Position: Full Stack Developer</p>
+              <p>Dates: 2014 - 2015</p>
+            </main>
+            <footer>
+              <p>Company <a href="#">https://company.com</a></p>
+            </footer>
+          </section>
+
+          <section class="card">
+            <header>
+              <h3>123 Design</h3>
+            </header>
+            <main>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusantium, unde.
+              </p>
+              <p>Position: Full Stack Developer</p>
+              <p>Dates: 2015 - 2018</p>
+            </main>
+            <footer>
+              <p>Company <a href="#">https://design.com</a></p>
+              <p>Phone: 0795414141414</p>
+            </footer>
+          </section>
+
+          <section class="card">
+            <header>
+              <h3>Web Desigmner Pros</h3>
+            </header>
+            <main>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusantium, unde.
+              </p>
+              <p>Position: Full Stack Developer</p>
+              <p>Dates: 2019 - 2022</p>
+            </main>
+            <footer>
+              <p>Company <a href="#">https://design.com</a></p>
+              <p>Phone: 01234581434</p>
+            </footer>
+          </section>
+
+                    <section class="card">
+            <header>
+              <h3>Web Desigmner Pros</h3>
+            </header>
+            <main>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusantium, unde.
+              </p>
+              <p>Position: Full Stack Developer</p>
+              <p>Dates: 2019 - 2022</p>
+            </main>
+            <footer>
+              <p>Company <a href="#">https://design.com</a></p>
+              <p>Phone: 01234581434</p>
+            </footer>
+          </section>
+
+          <section class="card">
+            <header>
+              <h3>Web Desigmner Pros</h3>
+            </header>
+            <main>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusantium, unde.
+              </p>
+              <p>Position: Full Stack Developer</p>
+              <p>Dates: 2019 - 2022</p>
+            </main>
+            <footer>
+              <p>Company <a href="#">https://design.com</a></p>
+              <p>Phone: 01234581434</p>
+            </footer>
+          </section>
+                    <section class="card">
+            <header>
+              <h3>Web Desigmner Pros</h3>
+            </header>
+            <main>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusantium, unde.
+              </p>
+              <p>Position: Full Stack Developer</p>
+              <p>Dates: 2019 - 2022</p>
+            </main>
+            <footer>
+              <p>Company <a href="#">https://design.com</a></p>
+              <p>Phone: 01234581434</p>
+            </footer>
+          </section>
+        </div>
+      </section>
+
+
+      <!-- MY Work Section -->
+      <section id="work" class="bg-dark">
+        <header class="container">
+          <h2>What Have I Build</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed,
+            laboriosam.
+          </p>
+        </header>
+        <ul id="work-examples">
+          <li class="work-example card bg-light">
+            <a href="#work">
+              <img class="work-img"
+                src="https://unsplash.it/1200/768.jpg?image=254"
+                alt="my work"
+              />
+            </a>
+          </li>
+          <li class="work-example card bg-light">
+            <a href="#work">
+              <img class="work-img"
+                src="https://unsplash.it/1200/768.jpg?image=100"
+                alt="my second work"
+              />
+            </a>
+          </li>
+          <li class="work-example card bg-light">
+            <a href="#work">
+              <img class="work-img"
+                src="https://unsplash.it/1200/768.jpg?image=120"
+                alt="third"
+              />
+            </a>
+          </li>
+          <li class="work-example card bg-light">
+            <a href="http://workoutshop.co.uk/">
+              <img class="work-img"
+                src="./images/Screenshot from 2022-11-28 08-35-39.png"
+                alt="third"
+              />
+              <h3>My own knowlagdge base - main page</h3>
+            </a>
+          </li>
+          <li class="work-example card bg-light">
+            <a href="http://workoutshop.co.uk/discussions/ostatnie-spojrzenie">
+              <img class="work-img"
+                src="./images/Screenshot from 2022-11-28 08-39-23.png"
+                alt="third"
+              />
+            </a>
+            <p>My own knowlagdge base - article example</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="container">
+        <header>
+          <h3>Get In Touch</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor,
+            quae.
+          </p>
+        </header>
+        <main class="sub-main">
+          <fieldset>
+            <legend>Email Me</legend>
+            <form action="">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your Name"
+              /><br />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+              /><br />
+              <textarea name="message" id="messsage" cols="30" rows="10" placeholder="Your message"></textarea
+              ><br />
+              <button type="submit" class="btn btn-dark">Send message</button>
+            </form>
+          </fieldset>
+        </main>
+      </section>
+    </main>
+
+    <footer id="main-footer" class="bg-dark">
       <ul>
         <li>
-          <a href="#home">About Me</a>
+          <p>&#64;<a href="#"> myemai@email.com</a></p>
         </li>
         <li>
-          <a href="#resume">Resume</a>
-        </li>
-        <li>
-          <a href="#work">Work</a>
-        </li>
-        <li>
-          <a href="#contact">
-            Contact
-          </a>
+          <p>Maciej and Maciej&#174;</p>
         </li>
       </ul>
-    </nav>
-  </header>
+    </footer>
 
-  <!-- Main Section of Site -->
-  <main class="main">
-    <!-- About Section -->
-    <section id="home">
-      <header class="subheader">
-        <h2>About Me</h2>
-      </header>
-      <nav class="subnavbar">
-        <a href="#">Cover Letter</a>
-        <a href="#">Skills</a>
-      </nav>
-      <article>
-        <h3>Cover Letter</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quaerat officiis magni consequuntur, molestias illum ipsam corporis earum itaque soluta eum, corrupti ea cumque ipsum sequi maxime quia incidunt et placeat! Minima eligendi delectus accusantium nostrum. Numquam sit commodi tenetur, voluptatum reprehenderit molestias provident, eum sunt modi, doloremque quod. Corporis.</p>
-      </article>
-      <article>
-        <h3>Skils</h3>
-        <div class="skils-progress">
-          <label for="html">HTML</label>
-          <progress id="html" max="100" value="50" style="display:block;width:100%">100</progress>
-          <label for="css">CSS</label>
-          <progress id="css" max="50" value="100" style="display:block;width:100%">100</progress>
-          <label for="javascript">javascript</label>
-          <progress id="javascript" max="100" value="70" style="display:block;width:100%">70</progress>
-          <label for="python">Python</label>
-          <progress id="python" max="100" value="80" style="display:block;width:100%">80</progress>
-        </div>
-      </article>
-    </section>
+    <!-- Ads Section -->
+    <!-- <aside class="ads">
+      <p>Google Ads</p>
+    </aside> -->
 
-    <!-- Resume Section -->
-    <section id="resume">
-      <header class="subheader">
-        <h2>My Resume</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias labore recusandae, beatae repellat at quae! Repellendus magni laboriosam omnis ratione unde voluptates ex, culpa modi quidem officiis eligendi consectetur. Omnis.</p>
-      </header>
-      <h3>Where I Have Worked</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eveniet?</p>
-      <section class="experience">
-        <header>
-          <h3>Devmaset</h3>
-        </header>
-        <main>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, unde.</p>
-          <p>Position: Full Stack Developer</p>
-          <p>Dates: 2014 - 2015</p>
-        </main>
-        <footer>
-          <p>Company <a href="#">https://company.com</a></p>
-        </footer>
-      </section>
-
-      <section class="experience">
-        <header>
-          <h3>123 Design</h3>
-        </header>
-        <main>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, unde.</p>
-          <p>Position: Full Stack Developer</p>
-          <p>Dates: 2015 - 2018</p>
-        </main>
-        <footer>
-          <p>Company <a href="#">https://design.com</a></p>
-          <p>Phone: 0795414141414</p>
-        </footer>
-      </section>
-
-      <section class="experience">
-        <header>
-          <h3>Web Desigmner Pros</h3>
-        </header>
-        <main>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, unde.</p>
-          <p>Position: Full Stack Developer</p>
-          <p>Dates: 2019 - 2022</p>
-        </main>
-        <footer>
-          <p>Company <a href="#">https://design.com</a></p>
-          <p>Phone: 01234581434</p>
-        </footer>
-      </section>
-    </section>
-
-    <!-- MY Work Section -->
-    <section id="work">
-      <header class="subheader">
-        <h2>What Have I Build</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, laboriosam.</p>
-      </header>
-      <ul id="work-examples">
-        <li class="work-example">
-          <a href="#work">
-            <img src="https://unsplash.it/1200/768.jpg?image=254" alt="my work">
-          </a>
-        </li>
-        <li class="work-example">
-          <a href="#work">
-            <img src="https://unsplash.it/1200/768.jpg?image=100" alt="my second work">
-          </a>
-        </li>
-        <li class="work-example">
-          <a href="#work">
-            <img src="https://unsplash.it/1200/768.jpg?image=120" alt="third">
-          </a>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <header>
-        <h3>Get In Touch</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, quae.</p>
-      </header>
-      <main class="sub-main">
-        <fieldset>
-          <legend>Email Me</legend>
-          <form action="">
-            <input type="text" name="name" id="name" placeholder="Your Name"><br>
-            <input type="email" name="email" id="email" placeholder="Email"><br>
-            <textarea name="message" id="messsage" cols="30" rows="10">Message</textarea><br>
-            <button type="submit">Send message</button>
-          </form>
-        </fieldset>
-      </main>
-    </section>
-  </main>
-
-  <footer id="main-footer">
-    <ul>
-      <li>
-        <p>&#64;<a href="#"> myemai@email.com</a></p>
-      </li>
-      <li>
-        <p>Maciej and Maciej&#174;</p>
-      </li>
-    </ul>
-  </footer>
-
-  <!-- Ads Section -->
-  <aside class="ads">
-    <p>Google Ads</p>
-  </aside>
-
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
